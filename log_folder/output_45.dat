@@ -1,0 +1,1 @@
+b'generating graph of 8 nodes\nCalculating all pairs shortest path...done\nstress 0.2065573512784471\nedge_uniformity 0.13141655921936035\nneighborhood_preservation 0\ncrossings 5\ncrossing_angle_maximization 0.9778706702626385\naspect_ratio 0.7231204509735107\nangular_resolution 0.0\nvertex_resolution 0.05777847766876221\ngabriel 0.8248401284217834\n'

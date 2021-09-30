@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+let activeQualityMeasures = [
+    'stress',
+    'edge_uniformity',
+    'neighborhood_preservation',
+    'crossings',
+
+    'crossing_angle_maximization',
+    'aspect_ratio',
+    'angular_resolution',
+    'vertex_resolution',
+    'gabriel',
+
+];
+
+function tableCreate(){
+    var body = document.body,
+        tbl  = document.createElement('table');
+    var plot_folder = "plots/";
+    //var plot_folder = "plots_1000/";
+    tbl.style.width  = '100px';
+    tbl.style.border = '1px solid black';
+
+    var arrayLength = activeQualityMeasures.length;
+    for(var i = 0; i < arrayLength; i++){
+        var tr = tbl.insertRow();
+        for(var j = 0; j < arrayLength; j++){
+            if(i>=j){
+                continue;
+            } else {
+                var td = tr.insertCell();
+                var img = document.createElement("img");
+                img.setAttribute('src', plot_folder+activeQualityMeasures[i] + '_vs_' + activeQualityMeasures[j]+".png");
+                img.setAttribute('id', i+','+j);
+		img.onclick = function(event){
+		  location.href = "show_plots.html?id="+this.id;
+                  var id = this.id;
+                }
+                td.appendChild(img);
+                td.style.border = '1px solid black';
+            }
+        }
+    }
+    body.appendChild(tbl);
+}
+tableCreate();
+
+</script>
+
+</body>
+</html>
+
+
+

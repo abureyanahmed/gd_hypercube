@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+let activeQualityMeasures = [
+    'stress',
+    'edge_uniformity',
+    'neighborhood_preservation',
+    'crossings',
+
+    'crossing_angle_maximization',
+    'aspect_ratio',
+    'angular_resolution',
+    'vertex_resolution',
+    'gabriel',
+
+];
+let graph_layout_files = ['hypercube_3.png', 'hypercube_5.png', 'hypercube_4.png', 'hypercube_6.png', 'hypercube_7.png'];
+function tableCreate(){
+    var id = new URL(window.location.href).searchParams.get("id");
+    var s = id.split(',');
+    var i = parseInt(s[0]);
+    var j = parseInt(s[1]);
+    console.log(activeQualityMeasures[i]);
+    console.log(activeQualityMeasures[j]);
+
+    var body = document.body,
+        tbl  = document.createElement('table');
+    var plot_folder = "plots/";
+    //var plot_folder = "plots_1000/";
+    tbl.style.width  = '100px';
+    tbl.style.border = '1px solid black';
+
+    var arrayLength = graph_layout_files.length;
+    var folders = [plot_folder+activeQualityMeasures[i]+'/', plot_folder+activeQualityMeasures[j]+'/', plot_folder+activeQualityMeasures[i]+"_vs_"+activeQualityMeasures[j]+'/']
+    var texts = [activeQualityMeasures[i], activeQualityMeasures[j], "combined"];
+    for(var i = 0; i < folders.length; i++){
+        var tr = tbl.insertRow();
+
+        var td = tr.insertCell();
+        var txt = document.createTextNode(texts[i]);
+        td.appendChild(txt);
+        for(var j = 0; j < arrayLength; j++){
+                var td = tr.insertCell();
+                var img = document.createElement("img");
+                img.setAttribute('src', folders[i]+graph_layout_files[j]);
+                img.setAttribute('id', i+','+j);
+                img.onclick = function(event){
+                  location.href = "show_plots.html?id="+this.id;
+                  var id = this.id;
+                }
+                td.appendChild(img);
+                td.style.border = '1px solid black';
+        }
+    }
+    body.appendChild(tbl);
+}
+tableCreate();
+
+</script>
+
+</body>
+</html>
+
+
+
