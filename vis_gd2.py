@@ -86,34 +86,46 @@ def generate_scatter_plot(metric1, metric2, sorted_keys, metric1_val, metric2_va
   #colors = np.random.rand(N)
   #area = (30 * np.random.rand(N))**2  # 0 to 15 point radii
 
+  fig, ax = plt.subplots()
   x1, x2, x12 = [], [], []
   y1, y2, y12 = [], [], []
   colors = []
   area = []
   common_area = 20
   for k in sorted_keys:
+    line_x = []
+    line_y = []
     if (k in metric1_val.keys()) and (k in metric1_val_metric2.keys()):
       x1.append(metric1_val[k])
       y1.append(metric1_val_metric2[k])
       #colors.append("red")
       #area.append(common_area)
+      line_x.append(x1[-1])
+      line_y.append(y1[-1])
 
     if (k in metric2_val.keys()) and (k in metric2_val_metric1.keys()):
       x2.append(metric2_val_metric1[k])
       y2.append(metric2_val[k])
       #colors.append("blue")
       #area.append(common_area)
+      line_x.append(x2[-1])
+      line_y.append(y2[-1])
 
     if (k in combined_metric1_val.keys()) and (k in combined_metric2_val.keys()):
       x12.append(combined_metric1_val[k])
       y12.append(combined_metric2_val[k])
       #colors.append("orange")
       #area.append(common_area)
+      line_x.append(x12[-1])
+      line_y.append(y12[-1])
+
+    line_ord = np.argsort(line_x)
+    plt.plot([line_x[p] for p in line_ord], [line_y[p] for p in line_ord], color="black", linestyle="dashed", linewidth=1)
 
   #if (metric1=="stress" and metric2=="edge_uniformity") or (metric1=="stress" and metric2=="neighborhood_preservation"):
   #  print(x1, y1)
 
-  fig, ax = plt.subplots()
+  #fig, ax = plt.subplots()
   plt.title("Hypercubes")
   plt.xlabel(metric1)
   plt.ylabel(metric2)

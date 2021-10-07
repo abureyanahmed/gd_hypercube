@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "dev.py", line 116, in <module>
+    scheduler_kwargs = dict(verbose=False),
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/gd2.py", line 178, in optimize
+    sampleOn='edges')
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 123, in crossing_angle_maximization
+    crossing_segs_sample = utils.sample_crossings(pos, G, k2i, sampleSize, sampleOn)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/utils.py", line 96, in sample_crossings
+    crossing_segs_sample = find_crossings(pos, edge_samples, k2i)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/utils.py", line 122, in find_crossings
+    point_segs_pairs = bo.isect_segments_include_segments(x)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 606, in isect_segments_include_segments
+    return isect_segments_impl(segments, include_segments=True)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 581, in isect_segments_impl
+    sweep_line.handle(p, events_current)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 388, in handle
+    self.handle_event(e)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 395, in handle_event
+    self.insert(event)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 327, in insert
+    assert(event not in self._events_current_sweep)
+AssertionError

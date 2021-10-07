@@ -1,0 +1,1 @@
+{"graph": "grid", "graph_param_1": "5", "output_file": "log_folder/output_25.txt", "metrics": ["neighborhood_preservation", "crossings"]}

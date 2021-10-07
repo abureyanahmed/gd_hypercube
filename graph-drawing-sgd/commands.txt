@@ -1,0 +1,17 @@
+mkdir log_folder
+export LOG_FOLDER=log_folder
+export MAP_FILE=map_gd2.csv
+sbatch --array=1-2 --job-name=compute_gd2 -o $LOG_FOLDER/%x.out -e $LOG_FOLDER/%x.err compute_gd2.sh
+sbatch --array=3-100 --job-name=compute_gd2 -o $LOG_FOLDER/%x.out -e $LOG_FOLDER/%x.err compute_gd2.sh
+sbatch --array=101-225 --job-name=compute_gd2 -o $LOG_FOLDER/%x.out -e $LOG_FOLDER/%x.err compute_gd2.sh
+
+zip -r log_folder.zip log_folder/
+scp log_folder.zip abureyanahmed@hpc.arizona.edu:/home/u18/abureyanahmed/
+scp map_gd2.csv abureyanahmed@lectura.cs.arizona.edu:/home/abureyanahmed/Desktop/GD2018/
+
+python3 find_error.py > error_inputs.txt
+
+scp graph-drawing-sgd.zip abureyanahmed@hpc.arizona.edu:/home/u18/abureyanahmed/
+scp log_folder_137_sep_28.zip abureyanahmed@lectura.cs.arizona.edu:/home/abureyanahmed/Desktop/GD2018/
+
+

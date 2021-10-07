@@ -1,0 +1,1 @@
+{"graph": "grid", "graph_param_1": "25", "output_file": "log_folder/output_206.txt", "metrics": ["neighborhood_preservation", "crossing_angle_maximization"]}

@@ -1,0 +1,1 @@
+b'generating graph of 100 nodes\nCalculating all pairs shortest path...done\nstress 0.6155586318120367\nedge_uniformity 1.0939271450042725\nneighborhood_preservation 0\ncrossings 5156\ncrossing_angle_maximization 0.9927664780415378\naspect_ratio 0.8480478525161743\nangular_resolution 0.0\nvertex_resolution 0.021118611097335815\ngabriel 0.009402293711900711\n'

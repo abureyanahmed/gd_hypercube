@@ -1,0 +1,704 @@
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 1
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 10
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 11
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 12
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 13
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 14
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 15
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 16
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 17
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 237, in <module>
+    loss = loss + C.crossing_angle_maximization(pos, G, k2i, i2k, sampleSize=10, sampleOn='crossings')
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 101, in crossing_angle_maximization
+    crossing_segs = utils.find_crossings(pos, edge_list, k2i)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/utils.py", line 65, in find_crossings
+    point_segs_pairs = bo.isect_segments_include_segments(x)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 606, in isect_segments_include_segments
+    return isect_segments_impl(segments, include_segments=True)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 581, in isect_segments_impl
+    sweep_line.handle(p, events_current)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 388, in handle
+    self.handle_event(e)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 395, in handle_event
+    self.insert(event)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 327, in insert
+    assert(event not in self._events_current_sweep)
+AssertionError
+
+*********************************************
+Input number: 19
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 235, in <module>
+    loss = loss + C.neighborhood_preseration(pos, G, adj, k2i, i2k, n_roots=2, depth_limit=2)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 220, in neighborhood_preseration
+    max_candidates=60,
+  File "/home/u18/abureyanahmed/.local/lib/python3.6/site-packages/pynndescent/pynndescent_.py", line 685, in __init__
+    data = check_array(data, dtype=np.float32, accept_sparse="csr", order="C")
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+
+*********************************************
+Input number: 28
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 237, in <module>
+    loss = loss + C.crossing_angle_maximization(pos, G, k2i, i2k, sampleSize=10, sampleOn='crossings')
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 101, in crossing_angle_maximization
+    crossing_segs = utils.find_crossings(pos, edge_list, k2i)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/utils.py", line 65, in find_crossings
+    point_segs_pairs = bo.isect_segments_include_segments(x)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 606, in isect_segments_include_segments
+    return isect_segments_impl(segments, include_segments=True)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 581, in isect_segments_impl
+    sweep_line.handle(p, events_current)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 388, in handle
+    self.handle_event(e)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 436, in handle_event
+    self.insert(e)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 327, in insert
+    assert(event not in self._events_current_sweep)
+AssertionError
+
+*********************************************
+Input number: 35
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 46
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 55
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 56
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 57
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 58
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 59
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 60
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 61
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 62
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 273, in <module>
+    raise Exception('loss is nan')
+Exception: loss is nan
+
+*********************************************
+Input number: 67
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 235, in <module>
+    loss = loss + C.neighborhood_preseration(pos, G, adj, k2i, i2k, n_roots=2, depth_limit=2)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 220, in neighborhood_preseration
+    max_candidates=60,
+  File "/home/u18/abureyanahmed/.local/lib/python3.6/site-packages/pynndescent/pynndescent_.py", line 685, in __init__
+    data = check_array(data, dtype=np.float32, accept_sparse="csr", order="C")
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+
+*********************************************
+Input number: 73
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 273, in <module>
+    raise Exception('loss is nan')
+Exception: loss is nan
+
+*********************************************
+Input number: 89
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 91
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 100
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 101
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 102
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 103
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 104
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 105
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 106
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 107
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 273, in <module>
+    raise Exception('loss is nan')
+Exception: loss is nan
+
+*********************************************
+Input number: 112
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 235, in <module>
+    loss = loss + C.neighborhood_preseration(pos, G, adj, k2i, i2k, n_roots=2, depth_limit=2)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 220, in neighborhood_preseration
+    max_candidates=60,
+  File "/home/u18/abureyanahmed/.local/lib/python3.6/site-packages/pynndescent/pynndescent_.py", line 685, in __init__
+    data = check_array(data, dtype=np.float32, accept_sparse="csr", order="C")
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+
+*********************************************
+Input number: 118
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 273, in <module>
+    raise Exception('loss is nan')
+Exception: loss is nan
+
+*********************************************
+Input number: 134
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 136
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 145
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 146
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 147
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 148
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 149
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 150
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 151
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 152
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 273, in <module>
+    raise Exception('loss is nan')
+Exception: loss is nan
+
+*********************************************
+Input number: 157
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 235, in <module>
+    loss = loss + C.neighborhood_preseration(pos, G, adj, k2i, i2k, n_roots=2, depth_limit=2)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 220, in neighborhood_preseration
+    max_candidates=60,
+  File "/home/u18/abureyanahmed/.local/lib/python3.6/site-packages/pynndescent/pynndescent_.py", line 685, in __init__
+    data = check_array(data, dtype=np.float32, accept_sparse="csr", order="C")
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+
+*********************************************
+Input number: 163
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 241, in <module>
+    loss = loss + C.aspect_ratio(pos, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 151, in aspect_ratio
+    return bce(estimate, target)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/torch/nn/modules/loss.py", line 498, in forward
+    return F.binary_cross_entropy(input, target, weight=self.weight, reduction=self.reduction)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/torch/nn/functional.py", line 2077, in binary_cross_entropy
+    input, target, weight, reduction_enum)
+RuntimeError: Assertion `x >= 0. && x <= 1.' failed. input value should be between 0~1, but got -nan at /opt/conda/conda-bld/pytorch_1579022034529/work/aten/src/THNN/generic/BCECriterion.c:62
+
+*********************************************
+Input number: 175
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 273, in <module>
+    raise Exception('loss is nan')
+Exception: loss is nan
+
+*********************************************
+Input number: 179
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 181
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 304, in <module>
+    Q.crossings(pos, edge_indices)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/quality.py", line 24, in crossings
+    return utils.count_crossings(pos, edge_indices)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/utils.py", line 101, in count_crossings
+    return len(bo.isect_segments(x))
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 598, in isect_segments
+    return isect_segments_impl(segments, include_segments=False)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 581, in isect_segments_impl
+    sweep_line.handle(p, events_current)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 388, in handle
+    self.handle_event(e)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 395, in handle_event
+    self.insert(event)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/utils/poly_point_isect.py", line 327, in insert
+    assert(event not in self._events_current_sweep)
+AssertionError
+
+*********************************************
+Input number: 186
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 190
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 191
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 192
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 193
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 194
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 195
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 196
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 231, in <module>
+    loss = loss + 0.01*C.stress(pos, D, W, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 279, in stress
+    x0 = pos[samples[:,0],:]
+TypeError: 'int' object is not subscriptable
+
+*********************************************
+Input number: 197
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 273, in <module>
+    raise Exception('loss is nan')
+Exception: loss is nan
+
+*********************************************
+Input number: 202
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 235, in <module>
+    loss = loss + C.neighborhood_preseration(pos, G, adj, k2i, i2k, n_roots=2, depth_limit=2)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 220, in neighborhood_preseration
+    max_candidates=60,
+  File "/home/u18/abureyanahmed/.local/lib/python3.6/site-packages/pynndescent/pynndescent_.py", line 685, in __init__
+    data = check_array(data, dtype=np.float32, accept_sparse="csr", order="C")
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 721, in check_array
+    allow_nan=force_all_finite == 'allow-nan')
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py", line 106, in _assert_all_finite
+    msg_dtype if msg_dtype is not None else X.dtype)
+ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+
+*********************************************
+Input number: 208
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 241, in <module>
+    loss = loss + C.aspect_ratio(pos, sampleSize)
+  File "/groups/kobourov/abureyanahmed/GD2021/graph-drawing-sgd/criteria.py", line 151, in aspect_ratio
+    return bce(estimate, target)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/torch/nn/modules/loss.py", line 498, in forward
+    return F.binary_cross_entropy(input, target, weight=self.weight, reduction=self.reduction)
+  File "/home/user/miniconda/envs/py36/lib/python3.6/site-packages/torch/nn/functional.py", line 2077, in binary_cross_entropy
+    input, target, weight, reduction_enum)
+RuntimeError: Assertion `x >= 0. && x <= 1.' failed. input value should be between 0~1, but got -nan at /opt/conda/conda-bld/pytorch_1579022034529/work/aten/src/THNN/generic/BCECriterion.c:62
+
+*********************************************
+Input number: 220
+*********************************************
+Traceback (most recent call last):
+  File "dev.py", line 273, in <module>
+    raise Exception('loss is nan')
+Exception: loss is nan
+
+*********************************************
+Input number: 224
+There are total 225 inputs
+There are total 63 errors

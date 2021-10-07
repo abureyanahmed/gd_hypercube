@@ -1,0 +1,1 @@
+{"graph": "grid", "graph_param_1": "20", "output_file": "log_folder/output_180.txt", "metrics": ["vertex_resolution", "gabriel"]}
